@@ -9,9 +9,10 @@ assignees: ''
 
 # Request for change form
 
-### Change source
+### Change source (select all that apply)
 - [ ] New feature
 - [ ] Feature enhancement
+- [ ] Dependencies
 - [ ] Defect
 - [ ] Security
 - [ ] Legal
@@ -20,7 +21,6 @@ assignees: ''
 ### Area of change
 - [ ] Architecture
 - [ ] Automation
-- [ ] Dependency
 - [ ] Documentation
 - [ ] Existing feature (please specify): _______________________
 - [ ] New feature
@@ -28,6 +28,12 @@ assignees: ''
 - [ ] Other (please specify): _______________________
 
 ### Reason for change (What problem is this solving, how will this improve current process, etc..)
+
+
+### Value added
+
+
+### Risk introduced
 
 
 ### Change description (Be as technical as you'd like here)
