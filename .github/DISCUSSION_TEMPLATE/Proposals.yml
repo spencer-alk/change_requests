@@ -23,7 +23,17 @@ body:
 - [ ] Versioning
 - [ ] Other (please specify): _______________________
 
-### Reason for change (What problem is this solving, how will this improve current process, etc..)
+### Reason for change (What problem is this solving, how will this improve current process, etc..)"
+- type: input
+  id: reason
+  attributes:
+    label: Reasoning
+  validations:
+    required: true
+    
+- type: markdown
+  attributes:
+    value: "
 
 
 ### Value added
