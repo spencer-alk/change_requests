@@ -2,7 +2,8 @@
 title: 'Request for change'
 body: 
 - type: markdown
-value: "# Request for change form
+  attributes:
+    value: "# Request for change form
 
 ### Change source (select all that apply)
 - [ ] New feature
