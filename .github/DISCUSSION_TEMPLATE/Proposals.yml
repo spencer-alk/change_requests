@@ -3,51 +3,80 @@ title: 'Request for change'
 body: 
 - type: markdown
   attributes:
-    value: "# Request for change form
+    value: "# Request for change form"
 
-### Change source (select all that apply)
-- [ ] New feature
-- [ ] Feature enhancement
-- [ ] Dependencies
-- [ ] Defect
-- [ ] Security
-- [ ] Legal
-- [ ] Other (please specify): _______________________
+- type: checkboxes
+  id: change-source
+  attributes:
+    label: Change source
+    description: Check all that apply
+    options: 
+      - label: New feature
+      - label: Feature enhancement
+      - label: Dependencies
+      - label: Defect
+      - label: Security
+      - label: Legal
+      - label: Other
+      
+- type: checkboxes
+  id: change-area
+  attributes:
+    label: Area of change
+    options:
+      - label: Architecture
+      - label: Automation
+      - label: Documentation
+      - label:  Existing feature
+      - label: New feature
+      - label: Versioning
+      - label: Other
 
-### Area of change
-- [ ] Architecture
-- [ ] Automation
-- [ ] Documentation
-- [ ] Existing feature (please specify): _______________________
-- [ ] New feature
-- [ ] Versioning
-- [ ] Other (please specify): _______________________
-
-### Reason for change (What problem is this solving, how will this improve current process, etc..)"
-- type: input
+- type: textarea
   id: reason
   attributes:
-    label: Reasoning
+    label: Reason for change
+    description: What problem is this solving, how will this improve current process, etc..
   validations:
     required: true
     
-- type: markdown
+- type: textarea
+  id: value-add
   attributes:
-    value: "
+    label: Value added
+  validations:
+    required: true
 
-
-### Value added
-
-
-### Risk introduced
-
-
-### Change description (Be as technical as you'd like here)
-
-
-### Supporting documentation (LucidChart diagrams, package documentation, etc..)
-
-
-### Will these changes require a new Jira ticket?
-"
+- type: textarea
+  id: risk-add
+  attributes:
+    label: Risk introduced
+  validations:
+    required: true
+    
+- type: textarea
+  id: change-description
+  attributes:
+    label: Change description
+    description: Be as technical as you'd like here
+  validations:
+    required: true
+    
+- type: textarea
+  id: support-docs
+  attributes:
+    label: Supporting documentation
+    description: LucidChart diagrams, package documentation, etc..
+  validations:
+    required: true
+    
+- type: dropdown
+  id: jira-ticket
+  attributes: 
+    label: Will these changes require a new JIRA ticket?
+    options: 
+     - Yes
+     - No
+  validatons:
+    required: true
 ---
