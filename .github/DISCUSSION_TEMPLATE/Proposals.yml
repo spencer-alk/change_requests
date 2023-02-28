@@ -75,8 +75,8 @@ body:
   attributes: 
     label: Will these changes require a new JIRA ticket?
     options: 
-     - Yes
-     - No
-  validatons:
+     - 'Yes'
+     - 'No'
+  validations:
     required: true
 ---
