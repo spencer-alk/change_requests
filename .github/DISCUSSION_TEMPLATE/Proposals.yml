@@ -1,13 +1,8 @@
 ---
-name: Request For Change
-about: RFC proposal template
-title: 'Request for change '
-labels: ''
-assignees: ''
-
----
-
-# Request for change form
+title: 'Request for change'
+body: 
+- type: markdown
+value: "# Request for change form
 
 ### Change source (select all that apply)
 - [ ] New feature
@@ -43,3 +38,5 @@ assignees: ''
 
 
 ### Will these changes require a new Jira ticket?
+"
+---
